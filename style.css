@@ -1,0 +1,29 @@
+/*
+theme name: Medinova
+author: Arif Billah
+Author uri: https://emranalarif.com
+description: This is a medinova malibagh hospital theme. This is created by Emran Al Arif
+tag: Medniva Malibagh Theme
+textdomain: medinova
+*/
+p{
+	font-size: 14px;
+}
+a:hover{
+	text-decoration: none;
+}
+
+/*menu*/
+
+.main-menu ul li{
+	display: inline;
+}
+.main-menu ul li a{
+    padding: 10px;
+    color: black;
+}
+.main-menu ul li a:hover{
+	    background: #037D71;
+	    text-decoration: none;
+	    color: #fff;
+}
