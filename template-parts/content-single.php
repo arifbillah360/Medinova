@@ -8,6 +8,9 @@
 		</div>
 	</header>
 	<div class="content">
-		<?php the_content(); ?>
+		<?php 
+		the_content();
+		wp_link_pages();
+		 ?>
 	</div>
 </article>

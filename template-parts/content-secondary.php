@@ -10,5 +10,5 @@
 		<span><?php the_tags( 'tags:<span>' , '</span>' );?></span></p>
 		</div>
 
-		<p><span><?php the_content()?></span></p>
+		<p><span><?php the_excerpt()?></span></p>
 	</article>

@@ -6,15 +6,65 @@ description: This is a medinova malibagh hospital theme. This is created by Emra
 tag: Medniva Malibagh Theme
 textdomain: medinova
 */
-p{
-	font-size: 14px;
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;0,600;0,800;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap');
+body{
+	font-weight: 400;
+	line-height: 1.58;
+	letter-spacing: -.003em;
+	font-size: 16px;
+}
+a{
+	text-decoration: none;
+}
+p{ 	font-family: 'open sans', sans-serif;
+	font-size: 15px;
+    opacity: 0.9;
+}
+h1,h2,h3,h4{
+	font-family: 'Exo', sans-serif;
+    color:  #037D71;
 }
 a:hover{
 	text-decoration: none;
 }
+/*theader*/
 
-/*menu*/
-
+#thead {
+    background: #037D71;
+    padding: 8px 0px;
+}
+/*social button*/
+.mm-social{
+	margin-top: 5px;
+}
+.mm-social li{
+	padding: 6px;
+    border-radius: 50%;
+    background: red;
+	display: inline;
+    list-style-type: none;
+}
+.mm-social li a{
+	color: #fff;
+}
+.mm-social .facebook{
+    background: #3b5998!important;
+}
+.mm-social .twitter {
+    background: #00acee!important;
+}
+.mm-button{
+  float: right;
+}
+/*social button End*/
+/*Comunication */
+.mm-address, .mm-phone{
+-webkit-box-shadow: 0px 0px 24px -14px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 24px -14px rgba(0,0,0,1);
+box-shadow: 0px 0px 24px -14px rgba(0,0,0,1);
+}
+/*menu and logo*/
 .main-menu ul li{
 	display: inline;
 }
@@ -26,4 +76,57 @@ a:hover{
 	    background: #037D71;
 	    text-decoration: none;
 	    color: #fff;
+}
+.custom-logo {
+    width: auto;
+    height: 40px;
+    border-radius: 5px;
+}
+/*menu and logo end*/
+/*Footer Section*/
+.widgets-title{}
+.footer-area{
+
+}
+.footer-area ul{
+    list-style-type: none;}
+.footer-area ul li{
+      margin: 8px 0;
+}
+.footer-area a{
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+.footer-area a:hover{
+  text-decoration: none;
+}
+/*Footer Section End*/
+/*Extra Extetions css*/
+.mm-line {
+  min-width: 992px;
+  height: 3px;
+  background: #037D71;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+  .mm-line1 {
+  width: 50px;
+  height: 3px;
+  background: #037D71;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px; 
+}
+.bg-main{
+    background-color: #eaecf0;
+}
+/*Extra Extention end*/
+
+
+.current-menu-item > a, 
+.current_page_item > a {
+    color: red;
 }
