@@ -1,5 +1,5 @@
 
-<div id="tfooter" class="p-5">
+<div id="tfooter" class="py-5">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-sm-12"><?php dynamic_sidebar('footer-1'); ?>
@@ -11,7 +11,7 @@
 		</div>
 	</div>
 </div>
-<div id="footer" class="bg-main p-3">
+<div id="footer" class="bg-medinova py-3">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8">

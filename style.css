@@ -1,9 +1,9 @@
 /*
-theme name: Medinova
+theme name: Medinova Malibagh
 author: Arif Billah
 Author uri: https://emranalarif.com
 description: This is a medinova malibagh hospital theme. This is created by Emran Al Arif
-tag: Medniva Malibagh Theme
+tag: Medinova Malibagh Medical Theme
 textdomain: medinova
 */
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;0,600;0,800;0,900;1,400&display=swap');
@@ -12,22 +12,71 @@ body{
 	font-weight: 400;
 	line-height: 1.58;
 	letter-spacing: -.003em;
-	font-size: 16px;
+	font-size: 14px;
+  overflow-x: hidden;
 }
 a{
 	text-decoration: none;
 }
+a:hover{
+  text-decoration: none!important;
+}
 p{ 	font-family: 'open sans', sans-serif;
-	font-size: 15px;
-    opacity: 0.9;
+	font-size: 14px;
+  opacity: 0.9;
 }
 h1,h2,h3,h4{
 	font-family: 'Exo', sans-serif;
-    color:  #037D71;
+  color:  #037D71;
+
 }
 a:hover{
 	text-decoration: none;
 }
+h1,h2,h3,h4,h5,h6,p,blockquote, address,big,cite,code,em,img,small,strike,sub,sup,li,ol,ul,fieldset,form,label,legend,button,table,caption,tr,th,td,
+ {
+  border: none;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+}
+/*Extra Extetions css*/
+.mm-line {
+  min-width: 992px;
+  height: 3px;
+  background: #037D71;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+  .mm-line1 {
+  width: 50px;
+  height: 3px;
+  background: #037D71;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px; 
+}
+.bg-main{
+    background-color: #eaecf0;
+}
+.bg-medinova{background-color: #037D71!important; color: #fff;!important}
+.text-medinova{
+  color: #037D71!important;
+}
+.color-black{
+  color: #000;
+}
+.color-white{
+  color: #fff;
+}
+.img-responsive{
+  width:100%;
+  height: auto;
+}
+/*Extra Extention end*/
 /*theader*/
 
 #thead {
@@ -36,14 +85,15 @@ a:hover{
 }
 /*social button*/
 .mm-social{
+  margin-bottom: 3px;
 	margin-top: 5px;
 }
 .mm-social li{
-	padding: 6px;
-    border-radius: 50%;
-    background: red;
+	padding: 4px;
+  border-radius: 50%;
+  background: red;
 	display: inline;
-    list-style-type: none;
+  list-style-type: none;
 }
 .mm-social li a{
 	color: #fff;
@@ -59,12 +109,20 @@ a:hover{
 }
 /*social button End*/
 /*Comunication */
+
 .mm-address, .mm-phone{
 -webkit-box-shadow: 0px 0px 24px -14px rgba(0,0,0,1);
 -moz-box-shadow: 0px 0px 24px -14px rgba(0,0,0,1);
 box-shadow: 0px 0px 24px -14px rgba(0,0,0,1);
 }
+.mm-address h4, .mm-phone h4{
+  text-shadow: 5px 5px 10px #888!important;
+}
 /*menu and logo*/
+#menu {
+    padding: 6px;
+    border: solid 3px #037d71;
+}
 .main-menu ul li{
 	display: inline;
 }
@@ -103,30 +161,91 @@ box-shadow: 0px 0px 24px -14px rgba(0,0,0,1);
   text-decoration: none;
 }
 /*Footer Section End*/
-/*Extra Extetions css*/
-.mm-line {
-  min-width: 992px;
-  height: 3px;
-  background: #037D71;
-  margin: 0 auto;
-  margin-top: 5px;
-  margin-bottom: 5px; }
 
-  .mm-line1 {
-  width: 50px;
-  height: 3px;
-  background: #037D71;
-  margin: 0 auto;
-  margin-top: 5px;
-  margin-bottom: 5px; 
+/*medinva Post secendary and othe post section css*/
+.mm-the-title{
+  color: #037D71;
 }
-.bg-main{
-    background-color: #eaecf0;
+.mm-the-title:hover{
+  color: #037D71;
+  text-decoration: none;
 }
-/*Extra Extention end*/
+.meta-info p{
+  font-style: italic;
+  border: none;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: i
+}
+.meta-info a{
+  color: red;
+}
+.meta-info span{
+  color: black!important;
+  font-size: 12px;
+}
+.read-more{
+  color: red;
+  margin: 0;
+  display: inline-block;
+}
+.post-img-responsive{
+  width: 100%;
+  height: auto;
+}
+/*comment*/
+.comment-form-comment label{
+  display: block!important;
+}
+#comments .submit{
+  background-color: #037D71;
+  color: #fff;
+  border: solid 2px #000;
+  padding: 5px 30px;
+}
+#comments .submit:hover{
+  background-color: red;
+  color: #fff;
+  border: solid 2px #037D71;
+
+}
+/*Medinova Malibagh Counter*/
+#mm-counter h3{
+  color: #000;
+}
+.mega-menu-item{
+  background: red;
+ }
+}
+
+#mm-counter col-sm-6{
+  width: 50%;
+}
+#mm-counter .counter{
+    color: #fff;
+    font-size: 20px;
+}
+#mm-counter h1{
+  color: #fff;
+}
+#social-automation h3{
+  color: red;
+}
 
 
-.current-menu-item > a, 
-.current_page_item > a {
-    color: red;
+/*Responsive Design*/
+@media only screen and (max-width: 768px){
+   #mm-counter .col-sm-6{
+    width: 50%;
+   }
+  .mega-menu-item:hover{
+    background: red!important;
+    color: #fff;
+   }
+  #communication .mm-address p,
+  #communication .mm-phone p{
+  font-size: 10px!important;
+  }
 }

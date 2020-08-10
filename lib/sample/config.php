@@ -427,6 +427,29 @@
             )
          ));
 
+
+       //Social Media Automation
+            Redux::setSection($opt_name, array(
+            'title' => __('Social Media Automation'),
+            'id' => 'social-automation',
+            'desc' => __('Youtube and facebook feed. Youtube Videos automatically show and facebook Page show dynamically', 'medinova'),
+            'fields' => array(
+                array(
+                    'title' => __('youtube Automation', 'medinova'),
+                    'desc' =>  __('"Youtube Them Social" Plugin short code paste the box. the code such as [fts_youtube vid_count=6 large_vid=yes large_vid_title=no large_vid_description....]', 'medinova'),
+                    'id' => 'youtube-automation',
+                    'type' => 'textarea'
+                ),
+                array(
+                    'title' => __('Facebook Page Automation', 'medinova'),
+                    'desc' =>  __('facebook iframe code paste the upper box. For This code Got to https://developer.facebook.com', 'medinova'),
+                    'id' => 'facebook-automation',
+                    'type' => 'textarea'
+                ),
+            )
+         ));
+
+
     /*
 
         As of Redux 3.5+, there is an extensive API. This API can be used in a mix/match mode allowing for

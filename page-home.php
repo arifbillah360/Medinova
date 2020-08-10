@@ -3,25 +3,25 @@
 echo do_shortcode('[smartslider3 slider="2"]');
 ?>
 <!-- Information Box -->
-<div id="information" class="text-center p-4">
+<div id="information" class="text-center py-4">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-sm-12">
 				<div class="time-table">
-					<h3>Time Table</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quo, aspernatur quos. Quos aliquam reprehenderit, provident expedita vel eveniet itaque dolor saepe.</p>
+					<h3><?php echo $reduxmedinova['information-title1'] ?></h3>
+					<p><?php echo $reduxmedinova['information-desc1'] ?></p>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-12">
 				<div class="appointment">
-				<h3>Appointment</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex pariatur, molestiae dolorem, odio quo alias doloremque, doloribus soluta, maxime non fugit quos?</p>		
+					<h3><?php echo $reduxmedinova['information-title2'] ?></h3>
+					<p><?php echo $reduxmedinova['information-desc2'] ?></p>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-12">
 				<div class="working-hour">
-					<h3>Working Hour</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem deserunt aut modi accusamus est delectus doloremque nulla repudiandae cum quam esse, iusto sit.</p>
+					<h3><?php echo $reduxmedinova['information-title3'] ?></h3>
+					<p><?php echo $reduxmedinova['information-desc3'] ?></p>
 				</div>
 			</div>
 		</div>
@@ -30,13 +30,20 @@ echo do_shortcode('[smartslider3 slider="2"]');
 
 
 <!-- Meet our Doctor -->
-<div id="meet-doctor" class="text-center p-5 jumbotron">
+<div id="meet-doctor" class="text-center py-5 jumbotron">
 	<div class="container">
 		<h1>Meet Our Doctor</h1>
 		<div class="mm-line1"></div>
-		<p class="lorem40">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit possimus doloremque dolorum dolorem enim quasi natus, ab sapiente exercitationem deserunt autem obcaecati animi nobis voluptatum iusto eum aliquam voluptatibus repudiandae ducimus, fugiat sunt mollitia aliquid consectetur. Voluptate tempore, repudiandae non suscipit ad, blanditiis et doloribus iusto similique ipsum, accusamus vero atque laborum accusantium! Impedit eum, unde, voluptate voluptas magni asperiores fuga reprehenderit adipisci ut numquam, iusto nihil molestiae. Placeat architecto facere ut, possimus, quibusdam tempore consequuntur veniam in ducimus repellendus debitis tempora voluptatibus perferendis, voluptate nisi illum quo molestiae sit, nostrum totam vero provident! Et cumque provident culpa voluptas modi a sint quo inventore, cum ducimus quisquam dolorem cupiditate aliquid vero?
-		</p>
+		<div class="row">
+			<div class="col-md-9">
+				<?php echo $reduxmedinova['temp-editor']?>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<h4>Medinova Malibagh Android APP</h4>
+				<p>	Stay connected with Hospitals with the Medinova Now app. This mobile application, available on Android.</p>
+				<a href="#" class="btn btn-danger">Download <i class="fa fa-download" aria-hidden="true"></i></a>
+			</div>
+		</div>
 	</div>
 </div>
 <!-- Doctor Slide -->
@@ -44,30 +51,70 @@ echo do_shortcode('[smartslider3 slider="2"]');
 	
 </div>
 
-<!-- Counter -->
-<div id="counter">
-	
-</div>
 <!-- YOUTUBE AND FACEBOOK  POST -->
-<div id="social-media" class="text-center p-5">
+<div id="social-automation" class="text-center py-5">
 	<div class="container">
-		<h1>Social Post Automation</h1>
+		<h1>Social Media Automation</h1>
 		<div class="mm-line1"></div>
 		<div class="row">
 			<div class="col-md-6 col-sm-12">
-		<!-- 		<?php
-				echo do_shortcode('[fts_youtube vid_count=6 large_vid=yes large_vid_title=no large_vid_description=no thumbs_play_in_iframe=yes vids_in_row=3 omit_first_thumbnail=no space_between_videos=2px force_columns=no maxres_thumbnail_images=yes thumbs_wrap_color=#fff channel_id=UCdIiQv9EbGK8eg0jJQJAluw]');
-				?> -->			
+			<h3>Health Advices</h3>
+			<div class="mm-line1"></div>
+			<?php
+			$yt = $reduxmedinova['youtube-automation'];
+			echo do_shortcode($yt);
+			?>
 			</div>
 			<div class="col-md-6 col-sm-12">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta cupiditate, totam eveniet quidem doloremque similique nam deserunt, explicabo in perspiciatis, at cum soluta officiis iusto accusantium quos eius, asperiores quasi necessitatibus placeat nesciunt debitis! Perferendis numquam sed ab, dicta aliquid, voluptas iste molestias et nulla officiis, fugit eius, quam dolorum!</p>
+				<h3>Facebook Feed</h3>
+				<div class="mm-line1"></div>
+				<?php echo $reduxmedinova['facebook-automation']?>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Counter -->
+<div id="mm-counter" class="text-center bg-medinova py-4">
+	<div class="container">
+		<h1>Animated Counter</h1>
+		<div class="mm-line1"></div>
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div>
+					<i class="fab fa-youtube fa-4x"></i>
+					<div class="counter" data-target="27000">0</div>
+					<h3>Subscribers</h3>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div>
+					<i class="fab fa-facebook fa-4x"></i>
+					<div class="counter" data-target="9000">0</div>
+					<h3>Likes</h3>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div>
+					<i class="fa fa-user fa-4x"></i>
+					<div class="counter" data-target="6000">0</div>
+					<h3>Patient</h3>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div>
+					<i class="fa fa-user-md fa-4x"></i>
+					<div class="counter" data-target="58">0</div>
+					<h3>Doctors</h3>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
 <!-- Leates News section -->
-<div id="latest-news" class="text-center p-5 bg-main">
+<div id="latest-news" class="text-center py-5 bg-main">
 	<div class="container">
 		<h1>Medical News</h1>
 		<div class="mm-line1"></div>
@@ -100,5 +147,10 @@ echo do_shortcode('[smartslider3 slider="2"]');
 		</div>
 	</div>
 </div>
+
+
+
+
+
 
 <?php get_footer();?>

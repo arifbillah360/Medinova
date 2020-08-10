@@ -4,7 +4,11 @@
 		wp_enqueue_style('styleheet', get_stylesheet_uri(), array(), '4.0.4');
 		wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css', array(), '4.0.4', 'all');
 		wp_enqueue_style( 'font-awesome-5', 'https://use.fontawesome.com/releases/v5.3.0/css/all.css', array(), '5.3.0' );
-		wp_enqueue_script('myscripts', get_template_directory_uri(). '/assets/js/main.js', array('jquery'), '3.0.0', true);
+		wp_enqueue_script('myscripts', get_template_directory_uri(). '/assets/js/main.js', array('jquery'), '1.0.0', true);
+ 		wp_enqueue_script('bootstrapjs', get_template_directory_uri(). '/assets/js/bootstrap.min.js', array('jquery'), '1.0.0', true);
+
+
+
 	}
 	add_action('wp_enqueue_scripts', 'load_scripts');
 
@@ -88,4 +92,10 @@
   	//TGM-Plugin_activation
   	require_once get_template_directory() . '/inc/class-tgm-plugin-activation.php';
   	require_once get_template_directory() . '/inc/required-plugins.php';
-  	//
+  	//Attachment Plugin Custom Options
+	if ( class_exists( 'Attachments' ) ) {
+		 	include_once( get_stylesheet_directory() .'/inc/attachments.php');
+	}
+	//Redux Framwork
+	require_once get_template_directory() . '/lib/ReduxCore/framework.php';
+	require_once get_template_directory() . '/lib/sample/config.php';

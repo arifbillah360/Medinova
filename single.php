@@ -3,7 +3,9 @@
 <div id="primary">
 	<div class="main">
 		<div class="container">
-			<?php
+			<div class="row">
+				<div class="col-md-9 col-sm-12">
+								<?php
 				while( have_posts() ) : 
 					the_post();
 					get_template_part('template-parts/content', 'single');
@@ -12,8 +14,12 @@
 						endif;
 				endwhile;
 			?>
-
-		</div>
+				</div> <!--col-md-9 -->
+				 <div class="col-md-3 col-sm-12">
+				<?php dynamic_sidebar('medinova-sidebar');?>
+			</div>
+			</div> <!--row -->
+		</div> <!--container -->
 	</div>
 </div>
 
